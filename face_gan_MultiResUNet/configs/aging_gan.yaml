@@ -1,0 +1,32 @@
+# Data configs
+domainY_dir: './archive/preprocessed/trainY'
+domainO_dir: './archive/preprocessed/trainO'
+
+# checkpoint info
+y2o: 'y2o.ckpt'
+o2y: 'o2y.ckpt'
+
+# Network Configs
+gen_alpha: 1.667
+dis_alpha: 1.25
+ngf: 16
+ndf: 16
+
+
+# Loss configs:
+adv_weight: 20
+cycle_weight: 10
+identity_weight: 7
+
+# Optimizer configs:
+lr: 0.0005
+weight_decay: 0.0001
+
+# Training configs:
+img_size: 256
+batch_size: 2
+num_workers: 8
+epochs: 10
+augment_rotation: 80
+gpus:
+  - 0
